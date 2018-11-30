@@ -1,0 +1,37 @@
+MANUAL DE USO
+
+* Comando make para compilar 
+* ./main para executar
+
+* Todos os dados dos Empregados estão armazenados no arquivo binario Empregado.dat;
+* Todos os dados dos Dependentes estão armazenados no arquivo binario Dependente.dat;
+* O Armazenamento é feito atraves de tabela de dispersão;
+* O tratamento de colisões é feito por zona; 
+
+A tela inicial apresenta 2 escolhas.
+
+(1)- somente manipula dados sobre os empregados.
+(2)- somente manipula dados sobre os dependentes.
+
+- Para escolher basta apertar o número coreespondente a opcão e a tecla enter. 
+
+Cada opção terá seu submenu próprio.
+
+SUBMENU Empregados
+
+1 - Cadrastar Empregado. 	* Nota não será permitido dois cadastros com o qual o campo codigo é igual.
+2 - Procura Empregado. 		* Busca por tabela hash, tempo esperado O(1)
+3 - Excluir Empregado.
+4 - Listar Empregados. 		* Só usada pra facilitar a verificação
+5 - Alterar Registro. 
+6 -	Voltar 					* Volta para o menu principal
+
+
+SUBMENU Dependente
+
+1 - Cadrastar dependente. 	* Nota não será permitido dois cadastros com o qual o campo codigo dependente é igual ou tenha o codigo Empregado como inexistente.
+2 - Procura dependente. 	* Busca por tabela hash, tempo esperado O(1)
+3 - Excluir dependente.
+4 - Listar dependente. 		* Só usada pra facilitar a verificação
+5 - Alterar Registro. 
+6 -	Voltar 					* Volta para o menu principal
